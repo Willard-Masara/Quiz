@@ -1,0 +1,80 @@
+/* App.css */
+
+/* General App Styles */
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: gold;
+    max-width: 600px;
+    margin: 0 auto;
+    perspective: 1000px;
+  }
+  
+  /* Header Styles */
+  .App-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Alternating Images */
+  .App-logo, .Julio {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: alternateImages 6s infinite;
+  }
+  
+  /* Keyframes for Image Alternation */
+  @keyframes alternateImages {
+    0%, 50% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  
+  /* Button Container and Button Styles */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .btn button {
+    background-color: black;
+    color: gold;
+    border: 2px solid gold;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 5px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    z-index: 1;
+  }
+  
+  .btn button:hover {
+    color: gold;
+    transform: scale(1.1);
+  }
+  
+  /* Footer Styles */
+  footer {
+    margin-top: auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 600px) {
+    .button-container {
+      flex-direction: column;
+    }
+  }
+  

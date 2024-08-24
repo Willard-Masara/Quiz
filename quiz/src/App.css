@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  height: 40vh; /* Adjust height as needed */
+  width: auto;
+  overflow: hidden;
+}
+
+.Julio {
+  position: relative;
+  top: 20px; /* Adds space from the top */
+  height: 80%; /* Adjust the size of the image */
+  width: auto;
+  margin-bottom: 20px; /* Adds space below the image */
+  border-radius: 80px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 50px; /* Additional padding from the top */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  display: flex;
+  gap: 20px;
+}
+
+.btn button {
+  background-color: sienna;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn button:hover {
+  background-color: red;
+}
+.submit-button {
+  background-color: #444;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: gold;
+  color: black;
+}
+footer {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.checkbox {
+  margin-bottom: 10px; /* Adjust as needed */
+}
+.perspective-container {
+  perspective: 1000px;
+}
+
+.perspective-item {
+  transform: rotateY(20deg);
+}
